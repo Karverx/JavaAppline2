@@ -36,7 +36,7 @@ public class Task4 {
         }
 
         System.out.println("Минимальное положительное число = " + minPos);
-        System.out.println("Максимальное отрицательно число = " + maxNeg);
+        System.out.println("Максимальное отрицательное число = " + maxNeg);
 
         //Меняем местами минимальное положительное и максимальное отрицательное числа
         for (int i = 0; i < array.length; i++) {

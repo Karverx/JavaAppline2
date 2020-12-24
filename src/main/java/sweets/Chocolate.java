@@ -3,7 +3,7 @@ package sweets;
 public class Chocolate extends Sweets{
 
     //Содержание какао в процентах
-    int cocoaContent;
+    private int cocoaContent;
 
     public Chocolate(String name, double weight, double price, int cocoaContent) {
         super(name, weight, price);

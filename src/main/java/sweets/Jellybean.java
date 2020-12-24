@@ -2,7 +2,7 @@ package sweets;
 
 public class Jellybean extends Sweets {
 
-    String color;
+    private String color;
 
     public Jellybean(String name, double weight, double price, String color) {
         super(name, weight, price);
