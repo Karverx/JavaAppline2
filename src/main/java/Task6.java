@@ -13,7 +13,7 @@ import java.util.TreeMap;
  * Найти слово с максимальным количеством повторений. Вывести на консоль это слово и сколько раз оно встречается в файле
  */
 
-public class Task5 {
+public class Task6 {
     public static void main(String[] args) {
 
         TreeMap<String, Integer> map = new TreeMap<>();
