@@ -21,7 +21,7 @@ public class Task3 {
                 System.out.println("Введите операцию ('+' Сложение, '-' Вычитание, '/' Деление, '*' Умножение)");
                 char symbol = sc.next().charAt(0);
                 double result = calculator(a, b, symbol);
-                System.out.printf("Sum is: %.4f" , result);
+                System.out.printf("Result is: %.4f" , result);
             }
             case 2 -> {
                 System.out.println("Введите размер массива");
