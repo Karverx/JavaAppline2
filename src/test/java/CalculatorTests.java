@@ -8,28 +8,30 @@ public class CalculatorTests {
 
     @Test
     public void addsTwoNumbers() {
-        assertEquals(8.0, calculator.calc(6.0,2.0,'+'), 0);
+        assertEquals(8, calculator.calc(6,2,'+'), 0);
     }
 
     @Test
     public void subtractsTwoNumbers() {
-        assertEquals(4.0, calculator.calc(6.0, 2.0, '-'), 0);
+        assertEquals(4, calculator.calc(6, 2, '-'), 0);
     }
 
     @Test
     public void multipliesTwoNumbers() {
-        assertEquals(12.0, calculator.calc(6.0, 2.0, '*'), 0);
+        assertEquals(12, calculator.calc(6, 2, '*'), 0);
+        assertEquals(0, calculator.calc(6, 0, '*'), 0);
     }
 
     @Test
     public void dividesTwoNumbers() {
-        assertEquals(3.0, calculator.calc(6.0, 2.0, '/'), 0);
+        assertEquals(3, calculator.calc(6, 2, '/'), 0);
+        assertEquals(1.5, calculator.calc(3, 2, '/'), 0);
 
     }
 
     @Test(expected = ArithmeticException.class)
     public void dividesOnZero() {
-       calculator.calc(2.0, 0.0, '/');
+       calculator.calc(2, 0, '/');
     }
 
 }
