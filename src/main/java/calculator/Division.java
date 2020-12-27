@@ -8,7 +8,7 @@ public class Division implements Operation {
             if(b == 0) throw new ArithmeticException();
          result = a / b;
         } catch (ArithmeticException e) {
-            System.out.println("На 0 делить нельзя");
+            throw new ArithmeticException("На 0 делить нельзя");
         }
         return result;
     }
