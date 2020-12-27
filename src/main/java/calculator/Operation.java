@@ -1,5 +1,5 @@
 package calculator;
 
-public interface Calculation {
+public interface Operation {
     double calculation(double a, double b);
 }
